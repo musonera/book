@@ -54,6 +54,7 @@ $(document).ready(function() {
   });
   Address.prototype.fullAddress = function() {
     return this.street + ", " + this.city + ", " + this.county;
-  }
-  
+  }  
 });
+$("ul#addresses").append("<li>" + address.street + ", " + address.city + " " + address.county + "</li>");
+
